@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:letterSpacing="0.3"
+            android:text="JARVIS"
+            android:textColor="@color/gold"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:letterSpacing="0.2"
+            android:text="ГОЛОСОВОЙ АССИСТЕНТ • BETA"
+            android:textColor="@color/neon"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/field_bg"
+            android:gravity="center"
+            android:padding="14dp"
+            android:text="Готов к работе"
+            android:textColor="@color/text_main"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnMic"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/mic_circle"
+            android:text="🎤"
+            android:textColor="@color/gold"
+            android:textSize="42sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Нажмите и говорите"
+            android:textColor="#9AA0A6"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchSnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/field_bg"
+            android:padding="14dp"
+            android:text="❄ Эффект падающего снега"
+            android:textColor="@color/text_main"
+            android:textSize="15sp"
+            app:thumbTint="@color/gold"
+            app:trackTint="@color/gold_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ГОЛОС ОЗВУЧКИ"
+            android:textColor="@color/neon"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spinnerVoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/field_bg"
+            android:padding="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="ПЕРСОНАЖ-ПОМОЩНИК"
+            android:textColor="@color/neon"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/spinnerPet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/field_bg"
+            android:padding="6dp" />
+
+        <Button
+            android:id="@+id/btnAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/card"
+            android:text="⚙ Включить службу доступности"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btnOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/card"
+            android:text="🪟 Разрешение «поверх приложений»"
+            android:textColor="@color/gold" />
+
+        <Button
+            android:id="@+id/btnPremium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/card"
+            android:text="⭐ Premium (Beta)"
+            android:textColor="@color/neon" />
+
+        <Button
+            android:id="@+id/btnBug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#2A1414"
+            android:text="🐞 Сообщить об ошибке"
+            android:textColor="#FF8A80" />
+
+    </LinearLayout>
+</ScrollView>
